@@ -15,6 +15,8 @@ It's main target use is for integration into Home Assistant integrations.
 
 ### Commands
 
+Run `uv sync --extra cli`
+
 - scan
   Scan for nearby Ooni Connect Bluetooth devices and display their information.
 
@@ -24,15 +26,6 @@ It's main target use is for integration into Home Assistant integrations.
 
   - list
     List all GATT services and characteristics, and read available data.
-
-  - timer `probe` `seconds`
-    Set a timer on the specified probe for a given number of seconds.
-
-  - range `probe` `minimum` `maximum`
-    Set a minimum and maximum temperature range for a probe.
-
-  - target `probe` `target`
-    Set a target temperature for a probe.
 
   - wait
     Wait indefinitely, keeping the connection open.
@@ -45,3 +38,9 @@ It's main target use is for integration into Home Assistant integrations.
 - `ooni-connect-bluetooth connect AA:BB:CC:DD:EE:FF range 1 50.0 80.0`
 - `ooni-connect-bluetooth connect AA:BB:CC:DD:EE:FF target 1 65.0`
 - `ooni-connect-bluetooth connect AA:BB:CC:DD:EE:FF wait`
+
+## Webserver
+
+Run `uv sync --extra webserver`
+
+Start the webserver `ooni-connect-bluetooth webserver`
