@@ -5,7 +5,7 @@ from bleak.uuids import register_uuids
 from .services import Service
 
 SUPPORTED_DEVICES = {
-    "UU-C00182"
+    "Ooni_DT_Hub"
 }
 
 register_uuids(
